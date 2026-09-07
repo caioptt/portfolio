@@ -29,14 +29,6 @@ export function Footer() {
         >
           <FaGithub />
         </a>
-               <a 
-          href="https://github.com/caioptt"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-        >
-          <FaWhatsapp />
-        </a>
 
       </div>
 

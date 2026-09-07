@@ -79,7 +79,7 @@ export function Contact() {
           </a>
 
           <a
-             href="https://www.linkedin.com/in/caiodevpereira/"
+            href="https://www.linkedin.com/in/caiodevpereira/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card"
@@ -104,10 +104,10 @@ export function Contact() {
           </a>
 
           <a
-             href="https://www.linkedin.com/in/caiodevpereira/"
+            href="https://wa.me/5531998634183"
             target="_blank"
             rel="noopener noreferrer"
-            className="contact-card"
+           className="contact-card"
           >
 
             <FaWhatsapp />
@@ -124,7 +124,7 @@ export function Contact() {
 
             </div>
 
-
+            <ArrowUpRight />
 
           </a>
 

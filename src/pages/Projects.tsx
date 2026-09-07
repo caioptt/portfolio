@@ -34,7 +34,7 @@ export function Projects() {
 
         <div className="page-heading">
 
-          <span>PORTFOLIO</span>
+          <span>PORTFÓLIO</span>
 
           <h1>
             Projetos

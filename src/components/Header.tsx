@@ -19,7 +19,7 @@ export function Header() {
           className="logo"
           onClick={closeMenu}
         >
-          CP<span>.</span>
+          Caio.dev<span>.</span>
         </Link>
 
         <nav className={`navigation ${menuOpen ? "active" : ""}`}>

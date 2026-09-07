@@ -44,16 +44,17 @@ export function Home() {
             </span>
 
             <h1>
-              Transformando ideias em
-              <span> experiências digitais.</span>
+              Construindo interfaces que unem
+              <span> tecnologia, experiência e produto.</span>
             </h1>
-
             <p>
-              Olá, meu nome é Caio Pereira. Desenvolvedor Front-end
-              focado na construção de interfaces modernas,
-              responsivas e componentizadas.
-            </p>
+              Sou Caio Pereira, desenvolvedor Front-end com experiência
+              na construção e evolução de produtos digitais, criando
+              interfaces responsivas, reutilizáveis e integradas a APIs.
 
+              Meu foco está em transformar requisitos em soluções
+              claras, performáticas e fáceis de evoluir.
+            </p>
             <div className="hero-buttons">
 
               <Link
@@ -103,7 +104,12 @@ export function Home() {
     "Angular",
     "TypeScript",
     "Javascript",
-    "Vue"
+    "Vue",
+    "Vuetify",
+    "API's Rest",
+    "HTML",
+    "CSS",
+    "Git"
   ],
 
   goal: "build great products"
@@ -146,7 +152,7 @@ export function Home() {
           <div className="section-header">
 
             <SectionTitle
-              subtitle="Portfolio"
+              subtitle="Portfólio"
               title="Projetos em destaque"
             />
 

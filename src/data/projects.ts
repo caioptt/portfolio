@@ -1,6 +1,7 @@
 import type { Project } from "../types/project"
 
 export const projects: Project[] = [
+
   {
     slug: "teste-tecnico-xtracky",
 
@@ -98,6 +99,45 @@ export const projects: Project[] = [
       "Componentização",
       "Interface web",
       "Organização de código"
+    ]
+  },
+    {
+    slug: "portfolio",
+
+    title: "Portfólio Pessoal",
+
+    shortDescription:
+      "Portfólio desenvolvido com React e TypeScript para apresentar meus projetos, habilidades e experiências como desenvolvedor Front-end.",
+
+    description:
+      "Aplicação SPA desenvolvida com React, TypeScript e Vite para centralizar meus projetos e apresentar minha trajetória profissional. O projeto foi estruturado com foco em componentização, reutilização de código, responsividade e organização de responsabilidades.",
+
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "React Router",
+      "CSS",
+      "GitHub Pages"
+    ],
+
+    repository:
+      "https://github.com/caioptt/portfolio",
+
+    demo:
+      "https://caioptt.github.io/portfolio/",
+
+    featured: true,
+
+    highlights: [
+      "Arquitetura baseada em componentes reutilizáveis",
+      "Navegação SPA com React Router",
+      "Tipagem com TypeScript",
+      "Dados dos projetos centralizados",
+      "Layout responsivo",
+      "Filtros de projetos por tecnologia",
+      "Rotas dinâmicas para detalhes dos projetos",
+      "Deploy no GitHub Pages"
     ]
   }
 ]
