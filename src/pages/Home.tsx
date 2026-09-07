@@ -1,7 +1,7 @@
 import {
   ArrowRight,
-  Github
 } from "lucide-react"
+import { FaGithub } from "react-icons/fa"
 
 import { Link } from "react-router-dom"
 
@@ -49,7 +49,7 @@ export function Home() {
             </h1>
 
             <p>
-              Olá, sou Caio Pereira. Desenvolvedor Front-end
+              Olá, meu nome é Caio Pereira. Desenvolvedor Front-end
               focado na construção de interfaces modernas,
               responsivas e componentizadas.
             </p>
@@ -70,7 +70,7 @@ export function Home() {
                 rel="noopener noreferrer"
                 className="button button-secondary"
               >
-                <Github size={19} />
+                <FaGithub size={19} />
                 GitHub
               </a>
 
@@ -94,13 +94,15 @@ export function Home() {
 
             <pre>
               <code>
-{`const developer = {
+                {`const developer = {
   name: "Caio Pereira",
   role: "Front-end Developer",
 
   stack: [
     "React",
+    "Angular",
     "TypeScript",
+    "Javascript",
     "Vue"
   ],
 

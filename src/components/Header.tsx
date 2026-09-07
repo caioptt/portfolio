@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
-import { Github, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import { FaGithub } from "react-icons/fa"
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -45,7 +46,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="github-header"
           >
-            <Github size={20} />
+            <FaGithub size={20} />
             GitHub
           </a>
 

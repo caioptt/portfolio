@@ -1,8 +1,10 @@
 import {
   ArrowUpRight,
-  Github,
   Mail
 } from "lucide-react"
+import { FaGithub } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
+import { FaWhatsapp } from "react-icons/fa"
 
 export function Contact() {
 
@@ -21,7 +23,7 @@ export function Contact() {
 
           <p>
             Estou aberto a oportunidades, projetos
-            e conversas sobre desenvolvimento Front-end.
+            e conversas sobre desenvolvimento.
           </p>
 
         </div>
@@ -35,7 +37,7 @@ export function Contact() {
             className="contact-card"
           >
 
-            <Github />
+            <FaGithub />
 
             <div>
 
@@ -54,7 +56,7 @@ export function Contact() {
           </a>
 
           <a
-            href="mailto:SEU_EMAIL_AQUI"
+            href="mailto:caiopereira552@gmail.com"
             className="contact-card"
           >
 
@@ -67,12 +69,62 @@ export function Contact() {
               </span>
 
               <strong>
-                Entre em contato
+                caiopereira552@gmail.com
               </strong>
 
             </div>
 
             <ArrowUpRight />
+
+          </a>
+
+          <a
+             href="https://www.linkedin.com/in/caiodevpereira/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card"
+          >
+
+            <FaLinkedin />
+
+            <div>
+
+              <span>
+                LinkedIn
+              </span>
+
+              <strong>
+                Caio Pereira
+              </strong>
+
+            </div>
+
+            <ArrowUpRight />
+
+          </a>
+
+          <a
+             href="https://www.linkedin.com/in/caiodevpereira/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card"
+          >
+
+            <FaWhatsapp />
+
+            <div>
+
+              <span>
+                Whatsapp
+              </span>
+
+              <strong>
+                Caio Pereira
+              </strong>
+
+            </div>
+
+
 
           </a>
 

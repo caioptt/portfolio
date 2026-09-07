@@ -1,4 +1,5 @@
-import { Github } from "lucide-react"
+import { FaGithub } from "react-icons/fa"
+import { FaWhatsapp } from "react-icons/fa"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -9,7 +10,7 @@ export function Footer() {
       <div className="container footer-content">
 
         <div>
-          <strong>Caio Pereira</strong>
+          <strong>Caio Pereira Teixeira</strong>
 
           <p>
             Desenvolvedor Front-end
@@ -26,7 +27,15 @@ export function Footer() {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <Github />
+          <FaGithub />
+        </a>
+               <a 
+          href="https://github.com/caioptt"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <FaWhatsapp />
         </a>
 
       </div>

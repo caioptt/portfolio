@@ -1,8 +1,9 @@
 import {
   ArrowLeft,
-  ExternalLink,
-  Github
+  ExternalLink
 } from "lucide-react"
+
+import { FaGithub } from "react-icons/fa"
 
 import {
   Link,
@@ -78,7 +79,7 @@ export function ProjectDetails() {
               rel="noopener noreferrer"
               className="button button-primary"
             >
-              <Github size={19} />
+              <FaGithub size={19} />
               Código
             </a>
 

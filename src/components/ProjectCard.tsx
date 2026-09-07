@@ -1,7 +1,7 @@
 import {
   ArrowUpRight,
-  Github
 } from "lucide-react"
+import { FaGithub } from "react-icons/fa"
 
 import { Link } from "react-router-dom"
 
@@ -58,7 +58,7 @@ export function ProjectCard({
             rel="noopener noreferrer"
             aria-label={`GitHub ${project.title}`}
           >
-            <Github size={20} />
+            <FaGithub size={20} />
           </a>
 
         </div>
