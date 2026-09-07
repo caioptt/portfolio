@@ -7,6 +7,8 @@ export const projects: Project[] = [
 
     title: "Gerenciamento de Usuários",
 
+    image: "/projects/portfolio.png",
+
     shortDescription:
       "Aplicação front-end para gerenciamento de usuários utilizando React, TypeScript e API REST mock.",
 
@@ -25,7 +27,7 @@ export const projects: Project[] = [
     repository:
       "https://github.com/caioptt/teste-tecnico-front-xtracky",
 
-    featured: true,
+    featured: false,
 
     highlights: [
       "Listagem de usuários",
@@ -43,6 +45,8 @@ export const projects: Project[] = [
     slug: "ecommerce",
 
     title: "E-commerce",
+
+    image: "/projects/e-commerce-card.png",
 
     shortDescription:
       "Aplicação de e-commerce desenvolvida com Vue.js e uma arquitetura baseada em componentes reutilizáveis.",
@@ -77,6 +81,8 @@ export const projects: Project[] = [
 
     title: "Aurea Project",
 
+    image: "/projects/portfolio.png",
+
     shortDescription:
       "Projeto desenvolvido em Vue.js explorando construção de interfaces e arquitetura front-end.",
 
@@ -92,7 +98,7 @@ export const projects: Project[] = [
     repository:
       "https://github.com/caioptt/aurea-project",
 
-    featured: true,
+    featured: false,
 
     highlights: [
       "Vue.js",
@@ -105,6 +111,8 @@ export const projects: Project[] = [
     slug: "portfolio",
 
     title: "Portfólio Pessoal",
+
+    image: "/projects/portfolio-card.png",
 
     shortDescription:
       "Portfólio desenvolvido com React e TypeScript para apresentar meus projetos, habilidades e experiências como desenvolvedor Front-end.",

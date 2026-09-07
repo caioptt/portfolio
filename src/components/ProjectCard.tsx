@@ -18,20 +18,21 @@ export function ProjectCard({
   return (
     <article className="project-card">
 
-      <div className="project-number">
-        {project.title.slice(0, 2).toUpperCase()}
+      <div className="project-image">
+        <img
+          src={project.image}
+          alt={`Preview do projeto ${project.title}`}
+        />
       </div>
 
       <div className="project-content">
 
         <div className="project-technologies">
-
           {project.technologies.slice(0, 4).map((technology) => (
             <span key={technology}>
               {technology}
             </span>
           ))}
-
         </div>
 
         <h3>
@@ -56,7 +57,6 @@ export function ProjectCard({
             href={project.repository}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`GitHub ${project.title}`}
           >
             <FaGithub size={20} />
           </a>

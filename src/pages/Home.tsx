@@ -9,18 +9,6 @@ import { ProjectCard } from "../components/ProjectCard"
 import { SectionTitle } from "../components/SectionTitle"
 import { projects } from "../data/projects"
 
-const technologies = [
-  "React",
-  "TypeScript",
-  "JavaScript",
-  "Vue.js",
-  "HTML",
-  "CSS",
-  "Vite",
-  "Git",
-  "REST APIs"
-]
-
 export function Home() {
 
   const featuredProjects = projects.filter(
@@ -89,7 +77,7 @@ export function Home() {
                 <span />
               </div>
 
-              <span>developer.ts</span>
+              <span>FrontEndDeveloper.ts</span>
 
             </div>
 
@@ -116,28 +104,6 @@ export function Home() {
 };`}
               </code>
             </pre>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <section className="technologies-section">
-
-        <div className="container">
-
-          <p className="technologies-label">
-            TECNOLOGIAS
-          </p>
-
-          <div className="technologies-list">
-
-            {technologies.map(technology => (
-              <span key={technology}>
-                {technology}
-              </span>
-            ))}
 
           </div>
 
