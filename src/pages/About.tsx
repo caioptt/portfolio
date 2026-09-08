@@ -1,5 +1,7 @@
 const skills = [
   "React",
+  "Vue.js",
+  "Angular",
   "TypeScript",
   "JavaScript",
   "Vue.js",
@@ -8,6 +10,7 @@ const skills = [
   "REST APIs",
   "Git",
   "Vite",
+  "Nest.js",
   "Responsividade",
   "Componentização",
   "Clean Code"
