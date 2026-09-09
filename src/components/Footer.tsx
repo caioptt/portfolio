@@ -1,5 +1,4 @@
 import { FaGithub } from "react-icons/fa"
-import { FaWhatsapp } from "react-icons/fa"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
