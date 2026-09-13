@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react"
-
+import "./Projects.css"
 import { ProjectCard } from "../components/ProjectCard"
 import { projects } from "../data/projects"
 
@@ -32,7 +32,7 @@ export function Projects() {
 
       <div className="container">
 
-        <div className="page-heading">
+        <div className="projects-heading">
 
           <span>PORTFÓLIO</span>
 
@@ -69,7 +69,7 @@ export function Projects() {
 
         </div>
 
-        <div className="projects-grid">
+        <div className="projects-page-grid">
 
           {filteredProjects.map(project => (
             <ProjectCard

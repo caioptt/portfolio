@@ -1,3 +1,4 @@
+import "./Home.css"
 import {
   ArrowRight,
 } from "lucide-react"
@@ -67,46 +68,18 @@ export function Home() {
 
           </div>
 
-          <div className="hero-code">
+          <div className="hero-photo-wrapper">
 
-            <div className="terminal-header">
+            <div className="hero-photo">
 
-              <div className="terminal-buttons">
-                <span />
-                <span />
-                <span />
-              </div>
-
-              <span>FrontEndDeveloper.ts</span>
+              <img
+                src="./profile/caio.jpg"
+                alt="Caio Pereira"
+              />
 
             </div>
 
-            <pre>
-              <code>
-                {`const developer = {
-  name: "Caio Pereira",
-  role: "Front-end Developer",
-
-  stack: [
-    "React",
-    "Angular",
-    "TypeScript",
-    "Javascript",
-    "Vue",
-    "Vuetify",
-    "API's Rest",
-    "HTML",
-    "CSS",
-    "Git"
-  ],
-
-  goal: "build great products"
-};`}
-              </code>
-            </pre>
-
           </div>
-
         </div>
 
       </section>
@@ -132,7 +105,7 @@ export function Home() {
 
           </div>
 
-          <div className="projects-grid">
+          <div className="home-projects-grid">
 
             {featuredProjects.map(project => (
               <ProjectCard

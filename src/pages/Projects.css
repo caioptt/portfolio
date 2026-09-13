@@ -1,0 +1,79 @@
+.projects-page-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.page-heading {
+  max-width: 760px;
+
+  margin-bottom: 60px;
+}
+
+.page-heading > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--primary-light);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+}
+
+.page-heading h1 {
+  margin-bottom: 20px;
+
+  font-size: clamp(3rem, 7vw, 5rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.055em;
+}
+
+.page-heading p {
+  max-width: 640px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.7;
+}
+
+.filters {
+  margin-bottom: 35px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.filter {
+  padding: 8px 13px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: var(--text-secondary);
+
+  cursor: pointer;
+}
+
+.filter:hover,
+.filter.active {
+  background: white;
+
+  color: black;
+}
+
+@media (max-width: 900px) {
+  .projects-page-grid {
+    grid-template-columns: 1fr;
+  }
+}

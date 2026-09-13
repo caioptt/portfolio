@@ -1,3 +1,4 @@
+import "./ProjectDetails.css"
 import {
   ArrowLeft,
   ExternalLink

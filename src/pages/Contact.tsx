@@ -1,3 +1,4 @@
+import "./Contact.css"
 import {
   ArrowUpRight,
   Mail
@@ -13,7 +14,7 @@ export function Contact() {
 
       <div className="container">
 
-        <div className="page-heading">
+        <div className="contact-heading">
 
           <span>CONTATO</span>
 
@@ -107,7 +108,7 @@ export function Contact() {
             href="https://wa.me/5531998634183"
             target="_blank"
             rel="noopener noreferrer"
-           className="contact-card"
+            className="contact-card"
           >
 
             <FaWhatsapp />

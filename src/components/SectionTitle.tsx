@@ -1,3 +1,4 @@
+import "./SectionTitle.css"
 interface SectionTitleProps {
   subtitle?: string
   title: string

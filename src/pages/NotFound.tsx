@@ -1,3 +1,4 @@
+import "./NotFound.css"
 import {
   ArrowLeft
 } from "lucide-react"

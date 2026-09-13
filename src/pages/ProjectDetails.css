@@ -1,0 +1,175 @@
+.project-details {
+  padding: 80px 0 120px;
+}
+
+.back-link {
+  margin-bottom: 60px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: var(--text-secondary);
+
+  transition: color 0.25s ease;
+}
+
+.back-link:hover {
+  color: white;
+}
+
+/* HEADER */
+
+.project-details-header {
+  display: grid;
+
+  grid-template-columns: 1fr auto;
+
+  align-items: end;
+
+  gap: 50px;
+
+  padding-bottom: 60px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.project-details-header h1 {
+  max-width: 800px;
+
+  margin-bottom: 20px;
+
+  font-size: clamp(3rem, 6vw, 5rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.055em;
+}
+
+.project-details-header p {
+  max-width: 750px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}
+
+.project-details-actions {
+  display: flex;
+
+  gap: 10px;
+}
+
+/* INFO */
+
+.project-info-grid {
+  margin-top: 50px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.info-card {
+  padding: 30px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  background: var(--surface);
+}
+
+.info-card > span {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: #71717a;
+
+  font-size: 0.7rem;
+
+  letter-spacing: 0.15em;
+}
+
+.stack-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.stack-list span {
+  padding: 6px 9px;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  color: var(--text-secondary);
+
+  font-size: 0.73rem;
+}
+
+.info-card ul {
+  color: var(--text-secondary);
+
+  line-height: 2;
+
+  list-style-position: inside;
+}
+
+/* CASE */
+
+.project-case {
+  max-width: 780px;
+
+  margin-top: 100px;
+}
+
+.project-case h2 {
+  margin-bottom: 25px;
+
+  font-size: 2.5rem;
+
+  letter-spacing: -0.04em;
+}
+
+.project-case p {
+  margin-bottom: 20px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .project-details-header {
+    grid-template-columns: 1fr;
+  }
+
+  .project-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-details {
+    padding: 60px 0 90px;
+  }
+
+  .project-details-actions {
+    flex-direction: column;
+  }
+
+  .project-details-actions .button {
+    width: 100%;
+  }
+
+  .project-case {
+    margin-top: 70px;
+  }
+}

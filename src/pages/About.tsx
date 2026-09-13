@@ -1,3 +1,4 @@
+import "./About.css"
 const skills = [
   "React",
   "Vue.js",
@@ -23,7 +24,7 @@ export function About() {
 
       <div className="container">
 
-        <div className="page-heading">
+        <div className="about-heading">
 
           <span>SOBRE</span>
 

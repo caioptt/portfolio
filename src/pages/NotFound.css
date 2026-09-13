@@ -1,0 +1,43 @@
+.not-found {
+  min-height: calc(100vh - 145px);
+
+  padding: 50px 20px;
+
+  display: grid;
+
+  place-items: center;
+
+  text-align: center;
+}
+
+.not-found > div {
+  max-width: 600px;
+}
+
+.not-found span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: var(--primary-light);
+
+  font-size: clamp(4rem, 10vw, 7rem);
+
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+.not-found h1 {
+  margin-bottom: 10px;
+
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.not-found p {
+  margin-bottom: 30px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.7;
+}

@@ -1,3 +1,4 @@
+import "./ProjectCard.css"
 import {
   ArrowUpRight,
 } from "lucide-react"
