@@ -10,7 +10,8 @@ import { FaWhatsapp } from "react-icons/fa"
 export function Contact() {
 
   return (
-    <section data-section className="page-section contact-page">
+    <section id="contato"
+      data-section className="page-section contact-page">
 
       <div className="container">
 
@@ -57,7 +58,9 @@ export function Contact() {
           </a>
 
           <a
-            href="mailto:caiopereira552@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=caiopereira552@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="contact-card"
           >
 

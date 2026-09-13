@@ -1,12 +1,11 @@
-
 import "./About.css"
+
 const skills = [
   "React",
   "Vue.js",
   "Angular",
   "TypeScript",
   "JavaScript",
-  "Vue.js",
   "HTML",
   "CSS",
   "REST APIs",
@@ -21,7 +20,11 @@ const skills = [
 export function About() {
 
   return (
-    <section data-section className="page-section" >
+    <section
+      id="sobre"
+      data-section
+      className="page-section"
+    >
 
       <div className="container">
 
@@ -38,10 +41,24 @@ export function About() {
               claras, performáticas e fáceis de evoluir.
             </p>
 
+          </div>
+
+
+          <div className="about-photo-wrapper">
+
+            <div className="about-photo">
+
+              <img
+                src={`${import.meta.env.BASE_URL}profile/caio.jpg`}
+                alt="Caio Pereira"
+              />
+
+            </div>
 
           </div>
 
         </div>
+
 
         <div className="skills-section">
 

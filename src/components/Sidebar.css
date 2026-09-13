@@ -29,31 +29,17 @@
   margin-bottom: 70px;
 }
 
-.sidebar-logo {
-  display: inline-block;
-
-  margin-bottom: 15px;
-  padding: 0;
-
-  border: 0;
-
-  background: transparent;
-
-  color: var(--text);
-
-  font-size: clamp(
-    2.5rem,
-    4vw,
-    4rem
-  );
+.sidebar-name {
+  margin-bottom: 10px;
+  font-size: clamp(2.5rem,
+      5vw,
+      3.0rem);
 
   font-weight: 800;
 
   line-height: 1;
 
-  letter-spacing: -0.055em;
-
-  cursor: pointer;
+  letter-spacing: -0.05em;
 }
 
 .sidebar-logo span {
@@ -63,7 +49,7 @@
 .sidebar-intro h2 {
   margin-bottom: 20px;
 
-  color: #e4e4e7;
+  color: #a78bfa;
 
   font-size: 1.25rem;
 
@@ -133,8 +119,7 @@
   color: white;
 }
 
-.sidebar-link:hover
-.sidebar-line {
+.sidebar-link:hover .sidebar-line {
   width: 50px;
 
   background: #a1a1aa;
@@ -144,8 +129,7 @@
   color: white;
 }
 
-.sidebar-link.active
-.sidebar-line {
+.sidebar-link.active .sidebar-line {
   width: 70px;
 
   background:

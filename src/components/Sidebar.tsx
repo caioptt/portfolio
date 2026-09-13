@@ -1,169 +1,239 @@
 import {
-  useEffect,
-  useState
+    useEffect,
+    useState
 } from "react"
 
 import {
-  FaGithub,
-  FaLinkedin
+    useLocation,
+    useNavigate
+} from "react-router-dom"
+
+import {
+    FaGithub,
+    FaLinkedin
 } from "react-icons/fa"
 
 import "./Sidebar.css"
 
 export function Sidebar() {
 
-  const [activeSection, setActiveSection] =
-    useState("sobre")
+    const navigate = useNavigate()
+    const location = useLocation()
 
-  const menuItems = [
-    {
-      label: "SOBRE",
-      id: "sobre"
-    },
-    {
-      label: "PROJETOS",
-      id: "projetos"
-    },
-    {
-      label: "CONTATO",
-      id: "contato"
-    }
-  ]
+    const [activeSection, setActiveSection] =
+        useState("sobre")
 
-  useEffect(() => {
 
-    const sections =
-      document.querySelectorAll("[data-section]")
-
-    const observer =
-      new IntersectionObserver(
-        entries => {
-
-          entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-              setActiveSection(
-                entry.target.id
-              )
-            }
-
-          })
-
+    const menuItems = [
+        {
+            label: "SOBRE",
+            id: "sobre"
         },
         {
-          rootMargin:
-            "-35% 0px -55% 0px",
-
-          threshold: 0
+            label: "PROJETOS",
+            id: "projetos"
+        },
+        {
+            label: "CONTATO",
+            id: "contato"
         }
-      )
+    ]
 
-    sections.forEach(section => {
-      observer.observe(section)
-    })
+    useEffect(() => {
 
-    return () => {
-      observer.disconnect()
+        /*
+          O scroll spy só deve funcionar
+          na página principal
+        */
+        if (location.pathname !== "/") {
+            return
+        }
+
+        const sections =
+            document.querySelectorAll<HTMLElement>(
+                "[data-section]"
+            )
+
+        if (!sections.length) {
+            return
+        }
+
+
+        const observer =
+            new IntersectionObserver(
+                entries => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            setActiveSection(
+                                entry.target.id
+                            )
+
+                        }
+
+                    })
+
+                },
+                {
+                    root: null,
+
+                    /*
+                      Define uma faixa central da tela
+                      para identificar a seção ativa
+                    */
+                    rootMargin:
+                        "-30% 0px -55% 0px",
+
+                    threshold: 0
+                }
+            )
+
+
+        sections.forEach(section => {
+            observer.observe(section)
+        })
+
+
+        return () => {
+            observer.disconnect()
+        }
+
+    }, [location.pathname])
+
+
+
+    function scrollToSection(id: string) {
+
+        function scroll() {
+
+            const section =
+                document.getElementById(id)
+
+            if (!section) {
+                return
+            }
+
+            section.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            })
+
+            setActiveSection(id)
+        }
+
+
+        /*
+          Se estiver dentro da página
+          de detalhes de algum projeto
+        */
+        if (location.pathname !== "/") {
+
+            navigate("/")
+
+            /*
+              Aguarda o Portfolio renderizar
+              para depois procurar a seção
+            */
+            setTimeout(() => {
+                scroll()
+            }, 150)
+
+            return
+        }
+
+
+        scroll()
     }
 
-  }, [])
+
+    return (
+        <aside className="sidebar">
+
+            <div className="sidebar-content">
 
 
-  function scrollToSection(id: string) {
-
-    document
-      .getElementById(id)
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      })
-
-  }
 
 
-  return (
-    <aside className="sidebar">
+                <div className="sidebar-intro">
+                    <h3 className="sidebar-name">
+                        Caio Pereira
+                    </h3>
+                    <h2>
+                        Front-end Developer
+                    </h2>
 
-      <div className="sidebar-content">
+                    <p>
+                        Crio interfaces Web responsivas, performáticas e integradas a APIs. 
+                        
+                    </p>
+                    <p> Com foco em tecnologia, experiência e produto.</p>
 
-        <div className="sidebar-intro">
-
-          <button
-            className="sidebar-logo"
-            onClick={() =>
-              scrollToSection("sobre")
-            }
-          >
-            Caio Pereira
-          </button>
-
-          <h2>
-          Front-end Developer
-          </h2>
-
-          <p>
-            Construindo interfaces que unem
-            tecnologia, experiência e produto
-          </p>
-
-        </div>
+                </div>
 
 
-        <nav className="sidebar-navigation">
+                <nav className="sidebar-navigation">
 
-          {menuItems.map(item => (
+                    {menuItems.map(item => (
 
-            <button
-              key={item.id}
+                        <button
+                            type="button"
+                            key={item.id}
 
-              onClick={() =>
-                scrollToSection(item.id)
-              }
+                            onClick={() =>
+                                scrollToSection(item.id)
+                            }
 
-              className={
-                activeSection === item.id
-                  ? "sidebar-link active"
-                  : "sidebar-link"
-              }
-            >
+                            className={
+                                activeSection === item.id
+                                    ? "sidebar-link active"
+                                    : "sidebar-link"
+                            }
+                        >
 
-              <span className="sidebar-line" />
+                            <span
+                                className="sidebar-line"
+                            />
 
-              <span className="sidebar-label">
-                {item.label}
-              </span>
+                            <span
+                                className="sidebar-label"
+                            >
+                                {item.label}
+                            </span>
 
-            </button>
+                        </button>
 
-          ))}
+                    ))}
 
-        </nav>
+                </nav>
 
 
-        <div className="sidebar-social">
+                <div className="sidebar-social">
 
-          <a
-            href="https://github.com/caioptt"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <FaGithub />
-          </a>
+                    <a
+                        href="https://github.com/caioptt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+                        <FaGithub />
+                    </a>
 
-          <a
-            href="https://www.linkedin.com/in/caiodevpereira/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedin />
-          </a>
 
-        </div>
+                    <a
+                        href="https://www.linkedin.com/in/caiodevpereira/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <FaLinkedin />
+                    </a>
 
-      </div>
+                </div>
 
-    </aside>
-  )
+            </div>
+
+        </aside>
+    )
 }
