@@ -7,7 +7,7 @@ export const projects: Project[] = [
 
     title: "Gerenciamento de Usuários",
 
-    image: "/projects/portfolio.png",
+    image: "./projects/teste-tecnico-xtracky.png",
 
     shortDescription:
       "Aplicação front-end para gerenciamento de usuários utilizando React, TypeScript e API REST mock.",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
 
     title: "E-commerce",
 
-    image: "/projects/e-commerce-card.png",
+    image: "./projects/e-commerce-card.png",
 
     shortDescription:
       "Aplicação de e-commerce desenvolvida com Vue.js e uma arquitetura baseada em componentes reutilizáveis.",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
 
     title: "Aurea Project",
 
-    image: "/projects/portfolio.png",
+    image: "./projects/aurea-project.png",
 
     shortDescription:
       "Projeto desenvolvido em Vue.js explorando construção de interfaces e arquitetura front-end.",
@@ -112,7 +112,7 @@ export const projects: Project[] = [
 
     title: "Portfólio Pessoal",
 
-    image: "/projects/portfolio-card.png",
+    image: "./projects/portfolio-card.png",
 
     shortDescription:
       "Portfólio desenvolvido com React e TypeScript para apresentar meus projetos, habilidades e experiências como desenvolvedor Front-end.",
