@@ -58,7 +58,7 @@ export const projects: Project[] = [
     description:
       "Projeto de comércio eletrônico criado para explorar construção de interfaces, componentes reutilizáveis, navegação e organização de aplicações front-end.",
     developmentDescription:
-      "Esse site foi desenvolvido como um portfólio pessoal em React com TypeScript, utilizando Vite para a estrutura e build da aplicação. A proposta foi criar uma experiência simples e direta, onde as principais informações ficam organizadas em uma única página com as seções Sobre, Projetos e Contato, utilizando uma sidebar fixa para facilitar a navegação.",
+      "O projeto foi desenvolvido como uma aplicação SPA de e-commerce utilizando Vue.js, TypeScript, Vuetify e Vite, com foco na construção de uma interface moderna, responsiva e baseada em componentes reutilizáveis. Durante o desenvolvimento foram trabalhados recursos como exibição de produtos, navegação entre páginas, carrinho, login, cadastro, busca e organização do layout para diferentes dispositivos.",
     technologies: [
       "Vue.js",
       "TypeScript",
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     description:
       "Projeto desenvolvido a partir de um desafio técnico Front-end envolvendo organização de código, componentização, gerenciamento de estado e integração com uma API REST mock.",
     developmentDescription:
-      "Esse site foi desenvolvido como um portfólio pessoal em React com TypeScript, utilizando Vite para a estrutura e build da aplicação. A proposta foi criar uma experiência simples e direta, onde as principais informações ficam organizadas em uma única página com as seções Sobre, Projetos e Contato, utilizando uma sidebar fixa para facilitar a navegação",
+      "O projeto utiliza React, TypeScript e Vite, com uma API mock baseada em json-server e Docker. A proposta é construir uma aplicação de gerenciamento de usuários com recursos de listagem, busca, ordenação, cadastro, edição e visualização de detalhes, além de tratamento de loading, erros e ausência de resultados.",
     technologies: [
       "React",
       "TypeScript",
@@ -131,9 +131,9 @@ export const projects: Project[] = [
       "Projeto desenvolvido em Vue.js explorando construção de interfaces e arquitetura front-end.",
 
     description:
-      "Aplicação desenvolvida utilizando Vue.js como parte da evolução dos meus conhecimentos em desenvolvimento Front-end.",
+      "Aplicação desenvolvida utilizando Vue.js no inicio da evolução dos meus conhecimentos em desenvolvimento Front-end.",
     developmentDescription:
-      "Esse site foi desenvolvido como um portfólio pessoal em React com TypeScript, utilizando Vite para a estrutura e build da aplicação. A proposta foi criar uma experiência simples e direta, onde as principais informações ficam organizadas em uma única página com as seções Sobre, Projetos e Contato, utilizando uma sidebar fixa para facilitar a navegação",
+      "O Aurea Project foi desenvolvido como uma aplicação web educacional voltada à apresentação de conteúdos sobre a Lei Áurea, o processo de abolição da escravidão no Brasil e seus desdobramentos históricos e sociais. No desenvolvimento utilizei Vue.js 2, Vue Router e Vuetify, estruturando a aplicação em componentes e rotas independentes. A interface foi construída com recursos como navigation drawer, cards, grid responsivo, imagens e transições entre páginas, buscando facilitar a navegação por um conteúdo extenso sem concentrar todas as informações em uma única tela.",
     technologies: [
       "Vue.js",
       "JavaScript",
