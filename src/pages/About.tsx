@@ -59,66 +59,6 @@ export function About() {
 
           </div>
 
-          <div className="about-card">
-
-            <span className="eyebrow">
-              MINHA ABORDAGEM
-            </span>
-
-            <div className="approach-item">
-
-              <strong>01</strong>
-
-              <div>
-                <h3>Entender</h3>
-                <p>
-                  Compreender problema e requisitos
-                </p>
-              </div>
-
-            </div>
-
-            <div className="approach-item">
-
-              <strong>02</strong>
-
-              <div>
-                <h3>Estruturar</h3>
-                <p>
-                  Definir componentes e responsabilidades
-                </p>
-              </div>
-
-            </div>
-
-            <div className="approach-item">
-
-              <strong>03</strong>
-
-              <div>
-                <h3>Construir</h3>
-                <p>
-                  Desenvolver uma solução simples e escalável
-                </p>
-              </div>
-
-            </div>
-
-            <div className="approach-item">
-
-              <strong>04</strong>
-
-              <div>
-                <h3>Refinar</h3>
-                <p>
-                  Melhorar UX, código e performance
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-
         </div>
 
         <div className="skills-section">

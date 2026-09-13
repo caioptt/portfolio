@@ -58,10 +58,6 @@ export function ProjectDetails() {
 
           <div>
 
-            <span className="eyebrow">
-              PROJETO
-            </span>
-
             <h1>
               {project.title}
             </h1>

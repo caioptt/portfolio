@@ -84,6 +84,11 @@ img {
   transform: translateY(-2px);
 }
 
+.button-linkedin {
+  background: #0a66c2;
+  color: white;
+}
+
 .button-primary {
   background: var(--primary);
   color: white;

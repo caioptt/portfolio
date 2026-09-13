@@ -1,18 +1,11 @@
-.projects-page-grid {
-  display: grid;
 
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  gap: 20px;
-}
-
-.page-heading {
+.projects-heading {
   max-width: 760px;
 
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
-.page-heading > span {
+.projects-heading > span {
   display: block;
 
   margin-bottom: 12px;
@@ -25,7 +18,7 @@
   letter-spacing: 0.16em;
 }
 
-.page-heading h1 {
+.projects-heading h1 {
   margin-bottom: 20px;
 
   font-size: clamp(3rem, 7vw, 5rem);
@@ -35,10 +28,12 @@
   letter-spacing: -0.055em;
 }
 
-.page-heading p {
+.projects-heading p {
   max-width: 640px;
 
   color: var(--text-secondary);
+
+  font-size: 1.05rem;
 
   line-height: 1.7;
 }
@@ -47,13 +42,14 @@
   margin-bottom: 35px;
 
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 8px;
 }
 
 .filter {
-  padding: 8px 13px;
+  padding: 8px 14px;
 
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -63,17 +59,92 @@
   color: var(--text-secondary);
 
   cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
 }
 
-.filter:hover,
+.filter:hover {
+  border-color: #52525b;
+
+  color: white;
+
+  transform: translateY(-1px);
+}
+
 .filter.active {
+  border-color: white;
+
   background: white;
 
-  color: black;
+  color: #09090b;
+}
+
+.projects-page-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
 }
 
 @media (max-width: 900px) {
+
+  .projects-heading {
+    margin-bottom: 40px;
+  }
+
   .projects-page-grid {
     grid-template-columns: 1fr;
   }
+
+}
+
+@media (max-width: 700px) {
+
+  .projects-heading {
+    margin-bottom: 35px;
+  }
+
+  .projects-heading h1 {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+  }
+
+  .projects-heading p {
+    font-size: 1rem;
+  }
+
+  .filters {
+    margin-bottom: 30px;
+
+    gap: 7px;
+  }
+
+  .filter {
+    padding: 7px 12px;
+
+    font-size: 0.9rem;
+  }
+
+  .projects-page-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .projects-heading h1 {
+    font-size: 2.8rem;
+  }
+
+  .filter {
+    font-size: 0.85rem;
+  }
+
 }

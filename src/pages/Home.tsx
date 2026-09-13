@@ -3,6 +3,7 @@ import {
   ArrowRight,
 } from "lucide-react"
 import { FaGithub } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
 
 import { Link } from "react-router-dom"
 
@@ -27,18 +28,13 @@ export function Home() {
 
           <div className="hero-content">
 
-            <span className="status">
-              <span className="status-dot" />
-              Desenvolvedor Front-end
-            </span>
-
             <h1>
-              Construindo interfaces que unem
-              <span> tecnologia, experiência e produto.</span>
+              Caio Pereira
+              <span> Front-end Developer</span>
             </h1>
             <p>
-              Sou Caio Pereira, desenvolvedor Front-end com experiência
-              na construção e evolução de produtos digitais, criando
+              Oi meu nome é Caio Pereira, sou desenvolvedor Front-end há 4 anos, com experiência
+              na construção e evolução de produtos digitais, SPAs, criando
               interfaces responsivas, reutilizáveis e integradas a APIs.
 
               Meu foco está em transformar requisitos em soluções
@@ -46,13 +42,13 @@ export function Home() {
             </p>
             <div className="hero-buttons">
 
-              <Link
-                to="/projetos"
-                className="button button-primary"
+              <a
+                 href="https://www.linkedin.com/in/caiodevpereira/"
+                className="button button-linkedin"
               >
-                Conhecer projetos
-                <ArrowRight size={19} />
-              </Link>
+                <FaLinkedin size={19} />
+                Linkedin
+              </a>
 
               <a
                 href="https://github.com/caioptt"
@@ -127,8 +123,6 @@ export function Home() {
           <div className="cta">
 
             <div>
-              <span>CONTATO</span>
-
               <h2>
                 Vamos construir algo interessante?
               </h2>
@@ -136,10 +130,9 @@ export function Home() {
 
             <Link
               to="/contato"
-              className="button button-light"
+              className="button button-secondary"
             >
-              Entrar em contato
-              <ArrowRight />
+              Entre em contato
             </Link>
 
           </div>

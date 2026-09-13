@@ -2,7 +2,6 @@ import "./Header.css"
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { Menu, X } from "lucide-react"
-import { FaGithub } from "react-icons/fa"
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -20,7 +19,7 @@ export function Header() {
           className="logo"
           onClick={closeMenu}
         >
-          Caio.dev<span>.</span>
+          Caio<span>.</span>dev
         </Link>
 
         <nav className={`navigation ${menuOpen ? "active" : ""}`}>
@@ -40,16 +39,6 @@ export function Header() {
           <NavLink to="/contato" onClick={closeMenu}>
             Contato
           </NavLink>
-
-          <a
-            href="https://github.com/caioptt"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="github-header"
-          >
-            <FaGithub size={20} />
-            GitHub
-          </a>
 
         </nav>
 
