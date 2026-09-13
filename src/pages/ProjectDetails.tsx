@@ -1,19 +1,29 @@
 import "./ProjectDetails.css"
 import {
   ArrowLeft,
-  ExternalLink
 } from "lucide-react"
 
 import { FaGithub } from "react-icons/fa"
 
 import {
   Link,
+  useNavigate,
   useParams
 } from "react-router-dom"
 
 import { projects } from "../data/projects"
 
 export function ProjectDetails() {
+
+  const navigate = useNavigate()
+
+  function backToProjects() {
+  navigate("/", {
+    state: {
+      scrollTo: "projetos"
+    }
+  })
+}
 
   const { slug } = useParams()
 
@@ -31,7 +41,7 @@ export function ProjectDetails() {
             Projeto não encontrado
           </h1>
 
-          <Link to="/projetos">
+          <Link to="/Portfolio">
             Voltar
           </Link>
 
@@ -46,13 +56,13 @@ export function ProjectDetails() {
 
       <div className="container">
 
-        <Link
-          to="/projetos"
+        <button
+            onClick={backToProjects}
           className="back-link"
         >
           <ArrowLeft size={18} />
           Projetos
-        </Link>
+        </button>
 
         <div className="project-details-header">
 
@@ -79,20 +89,6 @@ export function ProjectDetails() {
               <FaGithub size={19} />
               Código
             </a>
-
-            {project.demo && (
-
-              <a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button button-secondary"
-              >
-                <ExternalLink size={19} />
-                Demo
-              </a>
-
-            )}
 
           </div>
 
@@ -140,25 +136,12 @@ export function ProjectDetails() {
 
         <article className="project-case">
 
-          <span className="eyebrow">
-            CASE
-          </span>
-
           <h2>
             Sobre o desenvolvimento
           </h2>
 
           <p>
-            Neste projeto o objetivo foi criar uma solução
-            organizada e de fácil manutenção, separando
-            responsabilidades entre páginas, componentes,
-            serviços e estruturas de dados.
-          </p>
-
-          <p>
-            A construção priorizou componentização,
-            reutilização de código e uma experiência
-            consistente para o usuário.
+          {project.developmentDescription}
           </p>
 
         </article>

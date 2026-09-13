@@ -14,7 +14,8 @@ export const projects: Project[] = [
 
     description:
       "Aplicação SPA desenvolvida com React, TypeScript e Vite para centralizar meus projetos e apresentar minha trajetória profissional. O projeto foi estruturado com foco em componentização, reutilização de código, responsividade e organização de responsabilidades.",
-
+    developmentDescription:
+      "Esse site foi desenvolvido como um portfólio pessoal em React com TypeScript, utilizando Vite para a estrutura e build da aplicação. A proposta foi criar uma experiência simples e direta, onde as principais informações ficam organizadas em uma única página com as seções Sobre, Projetos e Contato, utilizando uma sidebar fixa para facilitar a navegação.",
     technologies: [
       "React",
       "TypeScript",
@@ -44,7 +45,7 @@ export const projects: Project[] = [
     ]
   },
 
-   {
+  {
     slug: "ecommerce",
 
     title: "E-commerce",
@@ -56,7 +57,8 @@ export const projects: Project[] = [
 
     description:
       "Projeto de comércio eletrônico criado para explorar construção de interfaces, componentes reutilizáveis, navegação e organização de aplicações front-end.",
-
+    developmentDescription:
+      "Esse site foi desenvolvido como um portfólio pessoal em React com TypeScript, utilizando Vite para a estrutura e build da aplicação. A proposta foi criar uma experiência simples e direta, onde as principais informações ficam organizadas em uma única página com as seções Sobre, Projetos e Contato, utilizando uma sidebar fixa para facilitar a navegação.",
     technologies: [
       "Vue.js",
       "TypeScript",
@@ -91,7 +93,8 @@ export const projects: Project[] = [
 
     description:
       "Projeto desenvolvido a partir de um desafio técnico Front-end envolvendo organização de código, componentização, gerenciamento de estado e integração com uma API REST mock.",
-
+    developmentDescription:
+      "Esse site foi desenvolvido como um portfólio pessoal em React com TypeScript, utilizando Vite para a estrutura e build da aplicação. A proposta foi criar uma experiência simples e direta, onde as principais informações ficam organizadas em uma única página com as seções Sobre, Projetos e Contato, utilizando uma sidebar fixa para facilitar a navegação",
     technologies: [
       "React",
       "TypeScript",
@@ -129,7 +132,8 @@ export const projects: Project[] = [
 
     description:
       "Aplicação desenvolvida utilizando Vue.js como parte da evolução dos meus conhecimentos em desenvolvimento Front-end.",
-
+    developmentDescription:
+      "Esse site foi desenvolvido como um portfólio pessoal em React com TypeScript, utilizando Vite para a estrutura e build da aplicação. A proposta foi criar uma experiência simples e direta, onde as principais informações ficam organizadas em uma única página com as seções Sobre, Projetos e Contato, utilizando uma sidebar fixa para facilitar a navegação",
     technologies: [
       "Vue.js",
       "JavaScript",

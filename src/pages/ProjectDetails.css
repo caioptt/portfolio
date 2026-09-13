@@ -3,17 +3,28 @@
 }
 
 .back-link {
-  margin-bottom: 60px;
-
   display: inline-flex;
-
   align-items: center;
 
-  gap: 7px;
+  gap: 8px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
 
   color: var(--text-secondary);
 
-  transition: color 0.25s ease;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .back-link:hover {
