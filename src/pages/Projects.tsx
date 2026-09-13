@@ -28,7 +28,7 @@ export function Projects() {
   }, [selectedTechnology])
 
   return (
-    <section className="page-section">
+    <section data-section className="page-section">
 
       <div className="container">
 

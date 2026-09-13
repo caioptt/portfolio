@@ -4,13 +4,10 @@ import {
   Routes
 } from "react-router-dom"
 
-import { Layout } from "./components/Layout"
+import { Sidebar } from "./components/Sidebar"
 
-import { Home } from "./pages/Home"
-import { Projects } from "./pages/Projects"
+import { Portfolio } from "./pages/Portfolio"
 import { ProjectDetails } from "./pages/ProjectDetails"
-import { About } from "./pages/About"
-import { Contact } from "./pages/Contact"
 import { NotFound } from "./pages/NotFound"
 
 function App() {
@@ -18,43 +15,34 @@ function App() {
   return (
     <HashRouter>
 
-      <Routes>
+      <div className="app-layout">
 
-        <Route element={<Layout />}>
+        <Sidebar />
 
-          <Route
-            index
-            element={<Home />}
-          />
+        <main className="app-content">
 
-          <Route
-            path="/projetos"
-            element={<Projects />}
-          />
+          <Routes>
 
-          <Route
-            path="/projetos/:slug"
-            element={<ProjectDetails />}
-          />
+            <Route
+              path="/"
+              element={<Portfolio />}
+            />
 
-          <Route
-            path="/sobre"
-            element={<About />}
-          />
+            <Route
+              path="/projetos/:slug"
+              element={<ProjectDetails />}
+            />
 
-          <Route
-            path="/contato"
-            element={<Contact />}
-          />
+            <Route
+              path="*"
+              element={<NotFound />}
+            />
 
-          <Route
-            path="*"
-            element={<NotFound />}
-          />
+          </Routes>
 
-        </Route>
+        </main>
 
-      </Routes>
+      </div>
 
     </HashRouter>
   )

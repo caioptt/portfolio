@@ -1,3 +1,4 @@
+
 import "./About.css"
 const skills = [
   "React",
@@ -20,42 +21,23 @@ const skills = [
 export function About() {
 
   return (
-    <section className="page-section">
+    <section data-section className="page-section" >
 
       <div className="container">
-
-        <div className="about-heading">
-
-          <span>SOBRE</span>
-
-          <h1>
-            Muito além de escrever componentes.
-          </h1>
-
-        </div>
 
         <div className="about-grid">
 
           <div className="about-text">
 
             <p>
-              Sou desenvolvedor Front-end com foco na
-              construção de interfaces modernas,
-              responsivas e reutilizáveis.
+              Oi meu nome é Caio Pereira, sou desenvolvedor Front-end há 4 anos, com experiência
+              na construção e evolução de produtos digitais, SPAs, criando
+              interfaces responsivas, reutilizáveis e integradas a APIs.
+
+              Meu foco está em transformar requisitos em soluções
+              claras, performáticas e fáceis de evoluir.
             </p>
 
-            <p>
-              Gosto de trabalhar entendendo primeiro
-              o problema que a interface precisa resolver
-              para depois pensar na tecnologia.
-            </p>
-
-            <p>
-              No desenvolvimento, busco separar
-              responsabilidades, criar componentes
-              reutilizáveis e manter o código simples
-              de entender e evoluir.
-            </p>
 
           </div>
 

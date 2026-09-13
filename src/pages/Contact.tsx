@@ -10,7 +10,7 @@ import { FaWhatsapp } from "react-icons/fa"
 export function Contact() {
 
   return (
-    <section className="page-section contact-page">
+    <section data-section className="page-section contact-page">
 
       <div className="container">
 
